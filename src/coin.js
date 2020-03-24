@@ -1,0 +1,45 @@
+export const handlePrice = data => {
+  const priceOne = document.getElementById(`price-0`);
+  const priceTwo = document.getElementById(`price-1`);
+  const priceThree = document.getElementById(`price-2`);
+  const priceFour = document.getElementById(`price-3`);
+  const priceFive = document.getElementById(`price-4`);
+  const priceSix = document.getElementById(`price-5`);
+  const priceSeven = document.getElementById(`price-6`);
+  const priceEight = document.getElementById(`price-7`);
+  const priceNine = document.getElementById(`price-8`);
+  const priceTen = document.getElementById(`price-9`);
+  priceOne.innerHTML = data[0].quotes.USD.price;
+  priceTwo.innerHTML = data[1].quotes.USD.price;
+  priceThree.innerHTML = data[2].quotes.USD.price;
+  priceFour.innerHTML = data[3].quotes.USD.price;
+  priceFive.innerHTML = data[4].quotes.USD.price;
+  priceSix.innerHTML = data[5].quotes.USD.price;
+  priceSeven.innerHTML = data[6].quotes.USD.price;
+  priceEight.innerHTML = data[7].quotes.USD.price;
+  priceNine.innerHTML = data[8].quotes.USD.price;
+  priceTen.innerHTML = data[9].quotes.USD.price;
+};
+
+export const handleName = data => {
+  const nameOne = document.getElementById(`coin-0`);
+  const nameTwo = document.getElementById(`coin-1`);
+  const nameThree = document.getElementById(`coin-2`);
+  const nameFour = document.getElementById(`coin-3`);
+  const nameFive = document.getElementById(`coin-4`);
+  const nameSix = document.getElementById(`coin-5`);
+  const nameSeven = document.getElementById(`coin-6`);
+  const nameEight = document.getElementById(`coin-7`);
+  const nameNine = document.getElementById(`coin-8`);
+  const nameTen = document.getElementById(`coin-9`);
+  nameOne.innerHTML = data[0].name;
+  nameTwo.innerHTML = data[1].name;
+  nameThree.innerHTML = data[2].name;
+  nameFour.innerHTML = data[3].name;
+  nameFive.innerHTML = data[4].name;
+  nameSix.innerHTML = data[5].name;
+  nameSeven.innerHTML = data[6].name;
+  nameEight.innerHTML = data[7].name;
+  nameNine.innerHTML = data[8].name;
+  nameTen.innerHTML = data[9].name;
+};

@@ -1,0 +1,144 @@
+body,
+html {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+  background-color: white;
+  display: flex;
+  justify-content: space-b;
+}
+
+#mainFrame {
+  border-radius: 20px;
+  position: absolute;
+  justify-content: center;
+  height: 100%;
+  width: 600px;
+  margin: 0px 0px 0px -300px;
+  left: 50%;
+  padding: 5px;
+  background-color: #a16df8;
+}
+
+#mainFrame__column {
+  display: flex;
+  justify-content: center;
+}
+
+#mainFrame-title {
+  display: flex;
+  justify-content: center;
+}
+
+/*main title animation*/
+.animated-text {
+  border-radius: 20px;
+  color: #fff;
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #2980b9;
+  padding: 0 130px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.line {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.line:first-child {
+  animation: anim 12s infinite;
+}
+
+@keyframes anim {
+  0% {
+    margin-top: 0;
+  }
+  16% {
+    margin-top: -60px;
+  }
+  33% {
+    margin-top: -120px;
+  }
+  50% {
+    margin-top: -180px;
+  }
+  66% {
+    margin-top: -120px;
+  }
+  82% {
+    margin-top: -60px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+#mainFrame-coinList {
+  display: flex;
+  align-content: center;
+  margin-left: 10px;
+  margin-top: 87px;
+  width: 580px;
+  height: 520px;
+}
+
+.mainFrame__coinColumn:first-child {
+  width: 100%;
+  margin-left: 53px;
+  z-index: 0;
+}
+
+.mainFrame__coinColumn:last-child {
+  width: 100%;
+  z-index: 0;
+}
+
+.coinName {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  z-index: -1;
+}
+
+.coinPrice {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  z-index: -1;
+}
+
+#sideFrame {
+  margin-left: 30px;
+  margin-top: 300px;
+  left: 0;
+  border: none;
+}
+
+.timer {
+  animation: timer 5s infinite;
+}
+
+@keyframes timer {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
